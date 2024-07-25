@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="https://media.istockphoto.com/id/1386179512/photo/computer-hacker-stealing-data-from-a-laptop.webp?b=1&s=170667a&w=0&k=20&c=LlgW42b4MRbfe94527I2gJ4LeZ45mYoFrthp7cA3D7s="
+      />
+    </div>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.5s;
+        filter: blur(10px);
+      }
+
+      .card {
+        height: 250px;
+        width: 250px;
+        border: 4px solid red;
+        transition: all 0.5s;
+        transition-delay: 0.2s;
+      }
+
+      .card:hover {
+        border: 4px solid yellow;
+        padding: 20px;
+        background-color: aqua;
+        cursor: pointer;
+        border-radius: 999px;
+      }
+
+      .card:hover img {
+        border-radius: 999px;
+        border: 2px solid red;
+        filter: blur(0);
+      }
+    </style>
+  </body>
+</html>

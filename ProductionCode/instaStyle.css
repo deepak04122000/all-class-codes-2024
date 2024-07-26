@@ -32,6 +32,13 @@
   padding-left: 32px;
   border: none;
   font-size: 18px;
+  outline: none;
+}
+
+.search-input input:focus {
+  border: 2px solid blue;
+  color: blue;
+  background-color: white;
 }
 
 .login-btn {
@@ -40,6 +47,12 @@
   border-radius: 8px;
   color: white;
   background-color: rgb(42, 42, 255);
+  transition: all 0.2s;
+}
+
+.login-btn:hover {
+  background-color: rgb(5, 2, 99);
+  color: yellow;
 }
 
 .signup-btn {
